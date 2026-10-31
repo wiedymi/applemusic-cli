@@ -8,6 +8,7 @@ import { now } from "./now";
 import { vol } from "./volume";
 import { playlists, playlist, tracks } from "./playlists";
 import { songs, search, song } from "./library";
+import { albums, album } from "./albums";
 import { shuffle, repeat } from "./options";
 import { help } from "./help";
 
@@ -44,6 +45,8 @@ export const commands: Record<string, Command> = {
   songs,
   search,
   song,
+  albums,
+  album,
 
   // Playback options
   shuffle,

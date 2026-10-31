@@ -37,12 +37,15 @@ Library:
   search <query> [--limit N] [--offset N]
                           Search library
   song <name>             Play a song by name (supports spaces)
+  albums [filter] [--limit N] [--offset N]
+                          List albums, optionally filtered by name
+  album <name>            Play an album by exact name, in track order
 
 Options:
   shuffle [on|off]        Get or set shuffle
   repeat [off|one|all]    Get or set repeat
 
-Pagination (for playlists, tracks, songs, search):
+Pagination (for playlists, tracks, songs, search, albums):
   --limit N, -l N         Show N results (default: 20 for search/songs, all for others)
   --offset N, -o N        Skip first N results (default: 0)
 
@@ -52,6 +55,8 @@ Examples:
   am search "nirvana" --limit 50
   am playlist "Chill Vibes"
   am song "Come As You Are"
+  am albums nirvana
+  am album "Nevermind"
 
   help                    Show this help
 `);
